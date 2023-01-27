@@ -1,4 +1,4 @@
 django
-djangorestframework==3.9.4
+djangorestframework
 django-cors-headers
 gunicorn
