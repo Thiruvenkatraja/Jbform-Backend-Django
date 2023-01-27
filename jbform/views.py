@@ -24,15 +24,14 @@ class JbApiview(APIView):
         serializer = Jbformserializer(data=request.data,instance=jbform_obj)
         if serializer.is_valid():
             serializer.save()
-            return Response({"Message":"Data Updated Successfully"})
-        return Response(status=status.HTTP_400_BAD_REQUEST)
+        return Response({"Message":"Data Updated Successfully"})
     
-    def patch(self,request,_id,format=None):
-        jbform_obj=Jdform.objects.get(_id=_id)
-        serializer = Jbformserializer(data=request.data,instance=jbform_obj,partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            return Response({"Message":"Data Updated Successfully"})
+    # def patch(self,request,_id,format=None):
+    #     jbform_obj=Jdform.objects.get(_id=_id)
+    #     serializer = Jbformserializer(data=request.data,instance=jbform_obj,partial=True)
+    #     if serializer.is_valid():
+    #         serializer.save()
+    #         return Response({"Message":"Data Updated Successfully"})
         
     
     def get(self,request,_id=None,format=None):
