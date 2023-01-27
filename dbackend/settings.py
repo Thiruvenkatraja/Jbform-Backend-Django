@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'jbform',
-    'rest_framework',
+    'dangorestframework',
     'corsheaders',
 ]
 
