@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jbform',
     'corsheaders',
+    'rest_framework'
 ]
 
 CORS_ORIGIN_ALLOW_ALL=True
