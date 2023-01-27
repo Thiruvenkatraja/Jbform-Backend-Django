@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import fcntl
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-shq#mlp7nhm3^+3vf_lj0*(swf)4k#!6hj_-uombdmdxh=18r='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -40,7 +42,6 @@ INSTALLED_APPS = [
     'jbform',
     'rest_framework',
     'corsheaders',
-    'djongo',
 ]
 
 CORS_ORIGIN_ALLOW_ALL=True
